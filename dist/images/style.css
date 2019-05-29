@@ -1,0 +1,123 @@
+
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+.intro{
+  
+  
+  height:500px;
+  background-size: cover;
+  
+}
+#intro-text{
+    margin-bottom:300px;
+    font-size:100px;
+    padding-top: 100px;
+    color: rgb(242, 242, 242); 
+    
+}
+.nav{
+    font-size: 20px;
+    color:rgb(242, 242, 242)
+}
+
+.right-nav:hover{
+    color:yellow;
+}
+
+ul{
+    list-style-type:none;
+    
+
+}
+li{
+    display:inline-block;
+    
+}
+.right-nav{
+    float:right;
+    margin-right: 100px;
+}
+.container{
+    
+    text-align:center;
+    padding:5px 10px;
+    background-size:cover;
+    width:100%;
+    background-image: url("background.jpg");
+    height:800px;
+    
+  }
+  .n-text {
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    padding-right:50px;
+}
+.n-icon {
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size:100px;
+    margin: 0px auto;
+    padding-top:100px;
+
+}
+#skills{
+    margin-top:50px;
+    text-align:center;
+   
+    
+
+}
+
+#my-work{
+    display:grid;
+    margin-top:50px;
+    grid-template-columns: 30% 30% 30% ;
+    grid-column-gap:40px;
+    margin-left:100px;
+    
+    
+}
+.beige{
+    background-color:beige;
+    margin-top:100px;
+    
+}
+p{
+    font-size: 20px;
+  
+}
+img{
+    margin-top:20px;
+    grid-area:img;
+
+}
+.contact{
+    background-color: lightblue;
+    text-align: center;
+    
+    
+}
+@media (max-width:950px){
+    #my-work{
+
+  
+  grid-template-columns: 1fr ;
+  grid-template-rows: repeat(autofill,minmax(100px));
+  grid-row-gap:70px;
+  
+}}
+
+.nav{
+    
+    position:fixed;
+    background-color:black;
+    width:100%;
+    height:60px;
+}

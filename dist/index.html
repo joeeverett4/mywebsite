@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="nav">
+  <ul>
+    <!--<li class="right-nav">Contact</li>-->
+    <a href ='#my-work' style = "color:rgb(242, 242, 242)"> <li class="right-nav">My Work</li></a>
+    <a href ='#skills' style = "color:rgb(242, 242, 242)"><li class="right-nav">Skills</li></a>
+  </ul>
+</div>
+  
+ <div class = "container">
+    <h1 id="intro-text">
+       
+      </h1>
+   </div>   
+  
+  <div id= "skills"> 
+      <h1 style ="margin-right:150px;"><em>Skills</em></h1>
+    <div class = "n-icon">
+      <i class="devicon-html5-plain colored HTML5"></i>
+      </div>
+      <div class="n-text">
+        HTML 5
+      </div>
+      <div class = "n-icon">
+        <i class="devicon-css3-plain colored"></i>
+        </div>
+        <div class ="n-text">
+          CSS3
+        </div>
+        <div class = "n-icon">
+            <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class ="n-text">
+              Javascript
+            </div>
+            <div class = "n-icon">
+                <i class="devicon-react-original colored"></i>
+                </div>
+                <div class ="n-text">
+                  React
+                </div>
+             
+
+    
+      
+      </div>
+  
+    
+    
+
+<div class="beige">
+  <h1  style = "text-align:center; padding-top:50px; margin-right:150px;"><em>My Work</em></h1>
+  <p style = "text-align:center; margin-right:100px;">A collection of projects I've worked on this year.</p>
+
+  <div id="my-work">
+<div class= "img">
+  <a href="https://codepen.io/SentinelCrush/full/zQKJZx" target="_blank">
+  <img src = "quiz.png"></a>
+  <h1>Multiple Choice Quiz</h1>
+  <p>Web app-Javascript CSS</p>
+</div>
+<div class= "img">
+  <a href= "https://codepen.io/SentinelCrush/full/YbppGL"target="_blank">
+    <img src = "wiki.jpg"></a>
+    <h1>Wikipedia Search Engine</h1>
+    <p>HTML5, Javascript,AJAX</p>
+  </div>
+  <div class= "img">
+    <a href="https://codepen.io/SentinelCrush/full/PvGadY" target = "_blank" > 
+    <img src = "breakout1.png"></a>
+      <h1>Breakout game</h1>
+      <p> HTML5, Javascript</p>
+    </div>
+</div>
+
+<div class="contact">
+ 
+</div>
+</div>
+<script>
+var i = 0;
+var txt = 'Hi I\'m Joe, a front end web developer.'
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("intro-text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
+
+ </script>
+
+        
+</body>
+</html>
